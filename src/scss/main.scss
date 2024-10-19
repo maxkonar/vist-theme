@@ -1,0 +1,12 @@
+//base
+@use 'base/body';
+@use 'base/fonts';
+
+//components
+@use 'components/container';
+@use 'components/case-studies';
+
+//layout
+@use 'layout/header';
+@use 'layout/footer';
+
