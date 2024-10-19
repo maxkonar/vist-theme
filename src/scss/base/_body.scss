@@ -1,5 +1,9 @@
+@use 'fonts' as *;
+
 body {
+    background: rgb(16, 16, 16);
     position: relative;
-    overflow-x: hidden;
-    font-family: 'Quicksand', sans-serif;
+    font-family: "Krona One", sans-serif;
+    color: rgb(255, 255, 255);
+    margin: 0;
 }

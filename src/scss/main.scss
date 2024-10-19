@@ -1,10 +1,11 @@
+@forward 'base/fonts';
+
 //base
 @use 'base/body';
-@use 'base/fonts';
 
 //components
 @use 'components/container';
-@use 'components/case-studies';
+@use 'components/button';
 
 //layout
 @use 'layout/header';

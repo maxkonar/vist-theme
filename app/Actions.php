@@ -21,8 +21,9 @@ class Actions {
 
     public function registerMenus() {
         register_nav_menus(array(
-            'primary' => esc_html__( 'Primary Menu', 'case-studies' ),
-            'footer' => esc_html__( 'Footer Menu', 'case-studies' ),
+            'primary' => esc_html__( 'Primary Menu', 'vist' ),
+            'secondary' => esc_html__( 'Secondary Menu', 'vist' ),
+            'footer' => esc_html__( 'Footer Menu', 'vist' ),
         ));
     }
 }
