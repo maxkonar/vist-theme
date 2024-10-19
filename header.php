@@ -1,9 +1,13 @@
-<?php
-use App\Helpers;
+<!doctype html>
+<html <?php language_attributes(); ?>>
 
-?>
-
-<?php wp_head(); ?>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <?php wp_head(); ?>
+</head>
+<?php use App\Helpers; ?>
+<body <?php body_class(); ?>>
 <header class="main-header">
     <div class="container main-header__inner">
         <div class="main-header__left-column">
@@ -17,14 +21,14 @@ use App\Helpers;
                         'container' => false,
                         'menu_class' => 'main-header__menu',
                         'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-                    ));
+                    ));  
                 ?>
             </div>
                 
         </div>
         <div class="main-header__right-column">
             <a href="#" class="btn header-contact-button"><?php echo esc_html__("Contact us", "vist"); ?></a>
-            <button class="hamburger">
+            <button class="hamburger-button-open">
                 <span class="hamburger__line"></span>
                 <span class="hamburger__line"></span>
                 <span class="hamburger__line"></span>
