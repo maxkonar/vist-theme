@@ -3,8 +3,14 @@
 namespace App;
 
 class Helpers{
-    public static function print_svg(string $file, string $path = '/assets/svg/')
+    public static function printSvg(string $file, string $path = '/assets/svg/')
     {
-      echo file_get_contents(get_stylesheet_directory() . $path . $file);
+        echo file_get_contents(get_stylesheet_directory() . $path . $file);
+    }
+
+    public static function getImage(string $file, string $path = '/assets/images/')
+    {
+        $image = get_stylesheet_directory_uri() . $path . $file;
+        return $image;
     }
 }
