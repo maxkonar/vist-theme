@@ -5,7 +5,7 @@ namespace App;
 class Actions {
     public function init() {
         add_action('wp_enqueue_scripts', [$this, 'registerStyles']);
-        add_action('wp_enqueue_scripts', [$this, 'registerScripts']);
+        add_action('wp_enqueue_scripts', [$this, 'registerScripts'], 20);
         add_action('init', [$this, 'registerMenus']);
     }
 
@@ -16,7 +16,6 @@ class Actions {
     public function registerScripts() {
         wp_enqueue_script('jquery');
         wp_enqueue_script('main', get_template_directory_uri() . '/dist/main.min.js', ['jquery'], null, true);
-        
     }
 
     public function registerMenus() {
