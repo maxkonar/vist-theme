@@ -1,0 +1,114 @@
+.hero-section {
+    height: 65vw;
+    padding-top: 22.75rem;
+    position: relative;
+    overflow: hidden;
+
+    @media screen and (max-width: 1024px){
+        height: unset;
+        padding-top: 8rem;
+        padding-bottom: 15rem;
+    }
+    
+    &__wrapper{
+        max-width: 550px;
+        z-index: 10;
+        position: relative;
+    }
+
+    &__title {
+        font-size: 3.75rem;
+        line-height: 5.25rem;
+
+        @media screen and (max-width: 1024px){
+            font-size: 2.625rem;
+            line-height: 2.888rem;
+    
+        }
+    }
+
+    &__contact-button{
+        &::after{
+            content: url('../assets/images/btn-icon.png');
+            width: 1.80rem;
+            height: 1.25rem;
+        }
+    }
+
+    &__spinner {
+        margin-top:3.125rem;
+    }
+
+    &__tree{
+        z-index: 2;
+        position: absolute;
+        right: 17vw;
+        top: 18vw;
+        height: 66vw;
+        transform: translateX(70px);
+        opacity: 0;
+        transition: transform 0.5s, opacity 0.5s;
+        transition-timing-function: cubic-bezier(0.25, 0.8, 0.5, 0.99);
+
+        @media screen and (max-width: 1024px){
+            top: unset;
+            left: 5vh;
+        }
+
+        &--show{
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    &__budda{
+        position: absolute;
+        right: -2vw;
+        top: 14vw;
+        height: 64vw;
+        transform: translateX(70px);
+        opacity: 0;
+        transition: transform 0.5s, opacity 0.3s;
+        transition-timing-function: cubic-bezier(0.25, 0.8, 0.5, 0.99);
+        transition-delay: 0.18s;
+
+        @media screen and (max-width: 1024px){
+            top: unset;
+        }
+
+
+        &--show{
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    &__sphere {
+        position: absolute;
+        height: 74vw;
+        left: 11vw;
+        top: -4vw;
+        z-index: -1;
+
+        @media screen and (max-width: 1024px){
+            top: unset;
+            bottom: 5vh;
+        }
+
+    }
+
+    &::after {
+        content: "";
+        background: linear-gradient(4.57deg, rgb(16, 16, 16) 12.615%, rgba(16, 16, 16, 0) 35.028%);
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -100vh;
+        bottom: 0;
+        z-index: 2;
+
+        @media screen and (max-width: 1024px){
+            top: 35vh;
+        }
+    }
+}
