@@ -7,4 +7,9 @@ body {
     color: rgb(255, 255, 255);
     margin: 0;
     scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+html {
+    overflow-x: hidden;
 }

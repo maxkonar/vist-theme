@@ -1,0 +1,72 @@
+@use '../variables' as vars;
+
+.our-clients{
+    &__heading{
+        display: flex;
+        align-items: center;
+        gap: 3.125rem;
+        position: relative;
+        margin-bottom: 50px;
+
+        @media screen and (max-width: 1024px){
+           flex-direction: column;
+           gap: 0;
+           align-items: flex-start;
+        }
+    }
+
+    &__title{
+        z-index: 3;
+        font-size: 2.5rem;
+        line-height: 3.125rem;
+    }
+
+    &__icon{
+        @media screen and (max-width: 1024px){
+            width: 80px;
+            height: 80px;
+        }
+    }
+
+
+    &__icon2{
+        position: absolute;
+        top: -3.5vw;
+        right: 0;
+        z-index: 2;
+        height: auto;
+
+        @media screen and (max-width: 1024px){
+            top: 9vw;
+            width: 8.75rem;
+            right: -4.125rem;
+        }
+    }
+
+    &__clients{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 150px;
+        margin-bottom: 50px;
+        z-index: 3;
+        position: relative;
+
+        @media screen and (max-width: 1024px){
+            flex-direction: column;
+            text-align: center;
+            gap: 15px;
+        }
+    }
+
+    &__button{
+        &>a {
+            margin: auto;
+            &::after{
+                content: url('../assets/images/btn-icon.png');
+                width: 1.80rem;
+                height: 1.25rem;
+            }
+        }
+    }
+}
