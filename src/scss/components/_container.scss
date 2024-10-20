@@ -2,4 +2,9 @@
     max-width: 1440px;
     margin:auto;
     width: 100%;
+    padding: 0.625rem;
+
+    @media screen and (max-width: 1024px){
+        width: auto;
+    }
 }
