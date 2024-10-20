@@ -5,8 +5,7 @@
     line-height: 1.125rem;
     text-decoration: unset;
     color: vars.$primary-color;
-    padding-block: 1rem;
-    padding-inline: 1.25rem;
+    padding: 1rem 1.25rem;
     display: flex;
     align-items: center;
     gap: 0.625rem;
@@ -25,11 +24,5 @@
 
     &:hover::before {
         top: 0;
-    }
-
-    &::after{
-        content: url('../assets/images/btn-icon.png');
-        width: 1.80rem;
-        height: 1.25rem;
     }
 }

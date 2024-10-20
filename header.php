@@ -8,6 +8,7 @@
 </head>
 <?php use App\Helpers; ?>
 <body <?php body_class(); ?>>
+    
 <header class="main-header">
     <div class="container main-header__inner">
         <div class="main-header__left-column">
@@ -24,10 +25,9 @@
                     ));  
                 ?>
             </div>
-                
         </div>
         <div class="main-header__right-column">
-            <a href="#" class="btn header-contact-button"><?php echo esc_html__("Contact us", "vist"); ?></a>
+            <a href="#contact-us" class="btn header-contact-button"><?php echo esc_html__("Contact us", "vist"); ?></a>
             <button class="hamburger-button-open">
                 <span class="hamburger__line"></span>
                 <span class="hamburger__line"></span>
@@ -36,3 +36,6 @@
         </div>
     </div>
 </header>
+<?php
+    get_template_part('template-parts/mobile-menu-section');
+?>
