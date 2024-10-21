@@ -1,17 +1,17 @@
 <?php use App\Helpers; ?>
 
 <div class="homepage-slider">
-    <div class="homepage-slider__wrapper">
-        <div class="homepage-slider__slide">
-            <img class="homepage-slider__slide--image" src="<?php echo Helpers::getImage('slider-placeholder.png'); ?>" alt="icon" width="304" height="304">
+    <div class="homepage-slider__wrapper swiper-wrapper">
+        <div class="homepage-slider__slide swiper-slide">
+            <img class="homepage-slider__slide--image" src="<?php echo Helpers::getImage('slider-placeholder.png'); ?>">
         </div>
-        <div class="homepage-slider__slide">
-            <img class="homepage-slider__slide--image" src="<?php echo Helpers::getImage('slider-placeholder.png'); ?>" alt="icon" width="304" height="304">
+        <div class="homepage-slider__slide swiper-slide">
+            <img class="homepage-slider__slide--image" src="<?php echo Helpers::getImage('slider-placeholder.png'); ?>">
         </div>
-        <div class="homepage-slider__slide">
-            <img class="homepage-slider__slide--image" src="<?php echo Helpers::getImage('slider-placeholder.png'); ?>" alt="icon" width="304" height="304">
+        <div class="homepage-slider__slide swiper-slide">
+            <img class="homepage-slider__slide--image" src="<?php echo Helpers::getImage('slider-placeholder.png'); ?>">
         </div>
     </div>
-    <div class="homepage-slider__pagination"></div>
+    <div class="homepage-slider__pagination swiper-pagination"></div>
     </div>
 </div>

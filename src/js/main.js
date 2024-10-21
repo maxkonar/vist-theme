@@ -1,8 +1,3 @@
-import Swiper from 'swiper';
-import { Pagination } from 'swiper/modules'
-import 'swiper/css/pagination';
-import 'swiper/css';
-
 document.addEventListener('DOMContentLoaded', () => {
     // Mobile menu
     jQuery('.hamburger-button-open').on('click', function() {
@@ -21,9 +16,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Homepage slider
     if(jQuery(".homepage-slider").length > 0) {
         const homepageSlider = new Swiper('.homepage-slider', {
-            modules: [Pagination],
-            direction: 'vertical',
             loop: true,
+            spaceBetween: 50,
             pagination: {
                 el: '.homepage-slider__pagination',
                 clickable: true,
