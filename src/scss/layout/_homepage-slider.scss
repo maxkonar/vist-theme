@@ -1,16 +1,30 @@
 .homepage-slider{
-    width: 100%;
     max-width: 1440px;
+    width: 80vw;
     margin: 0 auto;
     overflow: hidden;
     position: relative;
-    padding-bottom: 6rem;
+    padding: 50px 0;
 
-    &__slide{
-        &--image{
-            object-fit: contain;
-            width: 100%;
-            border-radius: 1.25rem;
+    @media screen and (max-width: 768px) {
+        overflow: unset;
+    }
+
+    &__image{
+        object-fit: contain;
+        width: 100%;
+        border-radius: 1.25rem;
+        &--desktop{
+            @media screen and (max-width: 768px){
+               display: none;
+            }
+
+        }
+        &--mobile{
+            @media screen and (min-width: 768px){
+               display: none;
+            }
+
         }
     }
 

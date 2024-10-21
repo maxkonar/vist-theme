@@ -17,11 +17,16 @@ document.addEventListener('DOMContentLoaded', () => {
     if(jQuery(".homepage-slider").length > 0) {
         const homepageSlider = new Swiper('.homepage-slider', {
             loop: true,
-            spaceBetween: 50,
+            spaceBetween: 30,
             pagination: {
                 el: '.homepage-slider__pagination',
                 clickable: true,
             },
+            breakpoints: {
+                768: {
+                  spaceBetween: 50
+                }
+              }
         });
     }
 });

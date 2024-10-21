@@ -23,7 +23,7 @@
     }
 
     &__nav {
-        @media screen and (max-width: 1024px){
+        @media screen and (max-width: 768px){
             display: none;
         }
         & ul {
@@ -68,7 +68,7 @@
 
     &__right-column {
         & .header-contact-button {
-            @media screen and (max-width: 1024px){
+            @media screen and (max-width: 768px){
                 display: none;
 
             }
@@ -85,7 +85,7 @@
         & .hamburger-button-open {
             display: none;
             
-            @media screen and (max-width: 1024px){
+            @media screen and (max-width: 768px){
                 cursor: pointer;
                 display: flex;
                 flex-direction: column;
