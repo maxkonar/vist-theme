@@ -1,6 +1,8 @@
 @use '../variables' as vars;
 
 .our-clients{
+    padding: 50px 0;
+
     &__heading{
         display: flex;
         align-items: center;
@@ -16,9 +18,9 @@
     }
 
     &__title{
-        z-index: 3;
-        font-size: 2.5rem;
-        line-height: 3.125rem;
+        font-size: 2.75rem;
+        line-height: 3.438rem;
+        max-width: 434px;
     }
 
     &__icon{
@@ -28,45 +30,18 @@
         }
     }
 
-
-    &__icon2{
-        position: absolute;
-        top: -3.5vw;
-        right: 0;
-        z-index: 2;
-        height: auto;
-
-        @media screen and (max-width: 1024px){
-            top: 9vw;
-            width: 8.75rem;
-            right: -4.125rem;
-        }
-    }
-
     &__clients{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         gap: 150px;
         margin-bottom: 50px;
-        z-index: 3;
         position: relative;
 
         @media screen and (max-width: 1024px){
             flex-direction: column;
             text-align: center;
             gap: 15px;
-        }
-    }
-
-    &__button{
-        &>a {
-            margin: auto;
-            &::after{
-                content: url('../assets/images/btn-icon.png');
-                width: 1.80rem;
-                height: 1.25rem;
-            }
         }
     }
 }
