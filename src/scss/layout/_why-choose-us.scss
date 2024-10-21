@@ -1,0 +1,24 @@
+.why-choose-us{
+    padding: 50px 0;
+
+    &__title{
+        font-size: 3.75rem;
+        line-height: 5.25rem;
+    }
+
+    &__section {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px;
+    }
+
+    &__subtitle{
+        font-size: 1.5rem;
+        line-height: 1.95rem;
+    }
+
+    &__details{
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+}
