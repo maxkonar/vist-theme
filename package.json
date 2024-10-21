@@ -19,5 +19,8 @@
   "devDependencies": {
     "sass": "^1.79.5",
     "terser": "^5.36.0"
+  },
+  "dependencies": {
+    "swiper": "^11.1.14"
   }
 }

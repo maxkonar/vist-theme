@@ -10,7 +10,7 @@
 <body <?php body_class(); ?>>
     
 <header class="main-header">
-    <div class="container main-header__inner">
+    <div class="main-header__inner">
         <div class="main-header__left-column">
             <a href="<?php echo esc_url(home_url()); ?>" class="main-header__logo">
                 <img width="155" height="49" src="<?php echo Helpers::getImage('logo.png'); ?>" alt="Logo Vist">
@@ -27,7 +27,7 @@
             </div>
         </div>
         <div class="main-header__right-column">
-            <a href="#contact-us" class="btn header-contact-button"><?php echo esc_html__("Contact us", "vist"); ?></a>
+            <a href="#contact-us" class="btn header-contact-button"><?php echo esc_html__("Let's Talk", "vist"); ?></a>
             <button class="hamburger-button-open">
                 <span class="hamburger__line"></span>
                 <span class="hamburger__line"></span>
