@@ -1,7 +1,7 @@
 <?php use App\Helpers; ?>
 
 <div class="our-clients">
-    <div class="container">
+    <div data-aos="fade-up" data-aos-duration="1000" class="container">
         <div class="our-clients__heading">
             <h2 class="our-clients__title"><?php echo esc_html__("Some of our cooperation", "vist"); ?></h2>
             <img class="our-clients__icon" src="<?php echo Helpers::getImage('our-client-star.png'); ?>" alt="icon" width="100" height="100">

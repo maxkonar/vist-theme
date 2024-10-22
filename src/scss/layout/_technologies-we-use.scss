@@ -1,6 +1,10 @@
 .technologies {
     padding: 18rem 0;
 
+    @media screen and (max-width: 768px){
+        padding-top: 0;
+    }
+
     &__section{
         display: flex;
         gap: 60px;

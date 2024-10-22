@@ -11,11 +11,16 @@ class Actions {
 
     public function registerStyles() {
         wp_enqueue_style('main', get_template_directory_uri() . '/dist/style.min.css', [], null, 'all');
+        wp_enqueue_style('swiper', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css', [], null, 'all');
+        wp_enqueue_style('aos-css', 'https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css');
     }
 
     public function registerScripts() {
         wp_enqueue_script('jquery');
         wp_enqueue_script('main', get_template_directory_uri() . '/dist/main.min.js', ['jquery'], null, true);
+        wp_enqueue_script('swiper', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js', [], null, true);
+        wp_enqueue_script('aos-js', 'https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js', array(), null, true);
+        wp_add_inline_script('aos-js', 'AOS.init();');
     }
 
     public function registerMenus() {
