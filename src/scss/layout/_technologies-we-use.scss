@@ -1,0 +1,281 @@
+.technologies {
+    padding: 18rem 0;
+
+    &__section{
+        display: flex;
+        gap: 60px;
+
+        @media screen and (max-width: 980px){
+            flex-direction: column;
+        }
+    }
+
+    &__wrapper{
+        display: flex;
+        gap: 60px;
+        align-items: center;
+        max-width: 404px;
+        width: 100%;
+
+        @media screen and (max-width: 768px){
+            display: block;
+        }
+    }
+
+    &__left-column{
+        width: 100%;
+        display: inline-block;
+        position: relative;
+    }
+
+    &__title{
+        font-size: 2.75rem;
+        line-height: 3.438rem;
+
+        @media screen and (max-width: 768px){
+            font-size: 2.5rem;
+            line-height: 3.125rem;
+        }
+    }
+
+    &__image{
+        z-index: -1;
+        @media screen and (max-width: 768px){
+            position: absolute;
+            right: 0;
+        }
+    }
+
+    &__decoration{      
+
+        &--first{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: -1;
+            left: -230px;
+            aspect-ratio: 1;
+            width: auto;
+
+            @media screen and (max-width: 768px){
+                position: absolute;
+                top: 0;
+                transform: unset;
+            }
+        }
+
+        &--second{
+            width: 980px;
+            height: 1150px;
+
+            @media screen and (max-width: 768px){
+                width: 580px;
+                height: 700px;
+            }
+        }
+    }
+
+    &__right-column{
+        position: relative;
+        width: 100%;
+
+        @media screen and (max-width: 768px){
+            height: 550px;
+        }
+    }
+
+    &__decoration-wrapper{
+        position: absolute;
+        top: 130px;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+        left: 60%;
+
+        @media screen and (max-width: 1450px){
+            left: 40%;
+        }
+
+        @media screen and (max-width: 768px){
+            top: 0px;
+            left: 50%;
+            transform: translate(-50%, 30%);
+        }
+    }
+
+    &__logos{
+        position: absolute;
+        width: 70%;
+        aspect-ratio: 1;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+
+        @media screen and (max-width: 768px){
+            width: 100%;
+        }
+
+        img{
+            @media screen and (max-width: 768px){
+                max-width: 40px;
+            }
+        }
+    }
+
+    &__logo{
+        &--first{ 
+            position: absolute;
+            top: 70px;
+            left: 290px;
+
+            @media screen and (max-width: 768px){
+                top: 110px;
+                left: 270px;
+            }
+        }
+
+        &--second{
+            position: absolute;
+            top: 110px;
+            left: 165px;
+
+            @media screen and (max-width: 768px){
+                top: 140px;
+                left: 200px;
+            }
+        }
+
+        &--third{
+            position: absolute;
+            top: 115px;
+            left: 460px;
+
+            @media screen and (max-width: 768px){
+                top: 145px;
+                left: 350px;
+            }
+        }
+
+        &--fourth{
+            position: absolute;
+            top: 200px;
+            left: 90px;
+
+            @media screen and (max-width: 768px){
+                top: 200px;
+                left: 145px;
+            }
+        }
+
+        &--fifth{
+            position: absolute;
+            top: 200px;
+            left: 300px;
+
+            @media screen and (max-width: 768px){
+                top: 200px;
+                left: 270px;
+            }
+        }
+
+        &--sixth{
+            position: absolute;
+            top: 195px;
+            left: 520px;
+
+            @media screen and (max-width: 768px){
+                top: 195px;
+                left: 400px;
+            }
+        }
+
+        &--seventh{
+            position: absolute;
+            top: 330px;
+            left: 80px;
+
+            @media screen and (max-width: 768px){
+                top: 280px;
+                left: 140px;
+            }
+        }
+
+        &--eighth{
+            position: absolute;
+            top: 330px;
+            left: 230px;
+
+            @media screen and (max-width: 768px){
+                top: 280px;
+                left: 230px;
+            }
+        }
+
+        &--ninth{
+            position: absolute;
+            top: 330px;
+            left: 400px;
+
+            @media screen and (max-width: 768px){
+                top: 280px;
+                left: 330px;
+            }
+        }
+
+        &--tenth{
+            position: absolute;
+            top: 300px;
+            left: 550px;
+
+            @media screen and (max-width: 768px){
+                top: 260px;
+                left: 405px;
+            }
+        }
+
+        &--eleventh{
+            position: absolute;
+            top: 450px;
+            left: 150px;
+
+            @media screen and (max-width: 768px){
+                top: 350px;
+                left: 185px;
+            }
+        }
+
+        &--twelfth{
+            position: absolute;
+            top: 435px;
+            left: 490px;
+
+            @media screen and (max-width: 768px){
+                top: 340px;
+                left: 375px;
+            }
+        }
+
+        &--thirteenth{
+            position: absolute;
+            top: 500px;
+            left: 250px;
+
+            @media screen and (max-width: 768px){
+                max-width: 70px !important;
+                top: 395px;
+                left: 235px;
+            }
+        }
+
+        &--fourteenth{
+            position: absolute;
+            top: 485px;
+            left: 385px;
+
+            @media screen and (max-width: 768px){
+                position: absolute;
+                top: 385px;
+                left: 320px;
+            }
+        }
+    }
+}
