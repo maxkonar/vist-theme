@@ -2,7 +2,7 @@
 
 <div class="hero-section">
     <div class="container">
-        <div class="hero-section__wrapper ">
+        <div data-aos="fade-left" data-aos-duration="1000" class="hero-section__wrapper">
             <h1 class="hero-section__title"><?php echo esc_html__("Your partner in digital transformation", "vist"); ?></h1>
             <a href="#contact-us" class="btn hero-section__contact-button"><?php echo esc_html__("Get in touch", "vist"); ?></a>
             <img class="hero-section__spinner" width="100" height="100" src="<?php echo Helpers::getImage('spinner.png'); ?>" alt="Vist spinner">

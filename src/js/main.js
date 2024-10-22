@@ -29,4 +29,21 @@ document.addEventListener('DOMContentLoaded', () => {
               }
         });
     }
+
+    // Header
+    let isScrolled = false;
+
+    jQuery(window).on('scroll', function() {
+        if (jQuery(this).scrollTop() > 50) {
+            if (!isScrolled) {
+                jQuery('.main-header').addClass('scrolled');
+                isScrolled = true;
+            }
+        } else {
+            if (isScrolled) {
+                jQuery('.main-header').removeClass('scrolled');
+                isScrolled = false;
+            }
+        }
+    });
 });

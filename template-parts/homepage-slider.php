@@ -1,6 +1,6 @@
 <?php use App\Helpers; ?>
 
-<div class="homepage-slider">
+<div data-aos="fade-up" data-aos-duration="1000" class="homepage-slider">
     <div class="homepage-slider__wrapper swiper-wrapper">
         <div class="homepage-slider__slide swiper-slide">
             <img class="homepage-slider__image homepage-slider__image--desktop" src="<?php echo Helpers::getImage('desktop-slider-placeholder.png'); ?>">

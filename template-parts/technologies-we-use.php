@@ -1,7 +1,7 @@
 <?php use App\Helpers; ?>
 
 <div class="technologies">
-    <div class="container technologies__section">
+    <div data-aos="fade-up" data-aos-duration="1000" class="container technologies__section">
         <div class="technologies__left-column">
             <img class="technologies__decoration--first" src="<?php echo Helpers::getImage('technologies-sphere.png'); ?>" alt="presentation" width="460" height="460">
             <div class="technologies__wrapper">
